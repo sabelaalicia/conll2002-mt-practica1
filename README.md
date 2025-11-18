@@ -17,12 +17,11 @@ conll2002-mt-practica1/
 │       ├── pred_labels.txt  # Predicciones de SpaCy
 │       └── combined.txt     # Formato para evaluación
 ├── src/
-│   ├── main.py             # Script principal
-│   └── modules/
-│       ├── utils.py        # Funciones auxiliares
-│       └── conlleval.py    # Evaluación CoNLL
-├── notebooks/              # Jupyter notebooks
-└── docs/                  # Documentación adicional
+    ├── main.py             # Script principal
+    └── modules/
+        ├── utils.py        # Funciones auxiliares
+        └── conlleval.py    # Evaluación CoNLL
+
 ```
 
 ## Instalación y Configuración
