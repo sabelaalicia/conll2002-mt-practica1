@@ -14,14 +14,11 @@ with open("../data/raw/vacunacion_cyl.txt", "r", encoding="utf-8") as file:
 doc_vacunacion = nlp(text_vacunacion)
 print(f"Procesamiento completado: {len(doc_vacunacion)} tokens analizados")
 
-
-
 ##  Conversión a formato IOB
 spacy_output_vacunacion=text_to_iob(doc_vacunacion)
 with open('../data/processed/pred_labels_vacunacion.txt', 'w', encoding='utf-8') as out_file:
     out_file.write(spacy_output_vacunacion)
 print("Etiquetas predichas guardadas en 'data/processed/pred_labels_vacunacion.txt'")
-
 
 # Creamos el documento en formato word gold pred
 true_labels_file = "../data/gold/gold_vacunacion.txt"
@@ -39,7 +36,6 @@ print("\nRESULTADOS DE LA EVALUACIÓN:")
 print("=" * 50)
 print(result)
 print("=" * 50)
-print(" Proceso completado")
 
 
 
